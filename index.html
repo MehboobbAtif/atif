@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dr Atif</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="logo.jpeg">
+</head>
+<body>
+<!-- Header -->
+<header class="bg-gradient-to-r from-slate-800 to-slate-900 p-4 shadow-lg text-white">
+  <div class="container mx-auto flex items-center justify-between flex-wrap">
+    <!-- Left Section: Logo + Nav (Hidden on mobile) -->
+    <div class="flex items-center gap-4">
+      <img src="deccan logo.png" alt="Logo"
+        class="h-14 w-14 rounded-full object-cover border-2 border-white shadow-md ring-2 ring-slate-500 transition-transform duration-300 hover:scale-105" />
+      <!-- Nav (desktop only) -->
+      <nav class="hidden sm:flex flex-wrap gap-3 items-center">
+
+        <!-- Home Dropdown -->
+        <div class="relative group">
+          <a href="index.html" class="px-4 py-2 rounded bg-slate-700 hover:bg-slate-600 transition font-medium">Home</a>
+          <div class="absolute hidden group-hover:flex flex-col bg-slate-800 rounded shadow-lg min-w-[160px] z-50">
+            <a href="about-institute.html" class="px-4 py-2 hover:bg-slate-600 transition">About Institution</a>
+            <a href="about-department.html" class="px-4 py-2 hover:bg-slate-600 transition">About the Department</a>
+            <a href="faculty-hyperlink.html" class="px-4 py-2 hover:bg-slate-600 transition">Faculty-Hyperlink–DCET</a>
+          </div>
+        </div>
+
+        <!-- About Dropdown (Professor Info) -->
+        <div class="relative group">
+          <button class="px-4 py-2 rounded bg-slate-700 hover:bg-slate-600 transition font-medium">About</button>
+          <div class="absolute hidden group-hover:flex flex-col bg-slate-800 rounded shadow-lg min-w-[460px] z-60 p-4 space-y-2 text-white">
+            <div class="flex items-center space-x-4">
+              <img src="https://via.placeholder.com/60" alt="Photo" class="w-14 h-14 rounded-full object-cover border border-white shadow" />
+              <div>
+                <p class="font-semibold text-sm">Dr. Mohd Atif</p>
+                <p class="text-xs text-slate-300">Professor, CSE Department</p>
+              </div>
+            </div>
+            <hr class="border-slate-600">
+            <div class="text-sm space-y-1">
+              <p><span class="font-semibold">Qualification:</span> Ph.D. in Computer Science</p>
+              <p><span class="font-semibold">Specialization:</span> AI, ML</p>
+              <p><span class="font-semibold">Skills:</span> Java, Python, Spring Boot, Data Science</p>
+              <p><span class="font-semibold">Email:</span> atif.cse@example.com</p>
+            </div>
+            <hr class="border-slate-600">
+          </div>
+        </div>
+
+        <!-- Courses Dropdown -->
+        <div class="relative group">
+          <button class="px-4 py-2 rounded bg-slate-700 hover:bg-slate-600 transition font-medium">Courses</button>
+          <div class="absolute hidden group-hover:flex flex-col bg-slate-800 rounded shadow-lg min-w-[220px] z-50 p-2 space-y-1">
+            <a href="Semester-wise-View.html" class="px-4 py-2 hover:bg-slate-600 transition rounded">Semester-wise View (PDF)</a>
+            <a href="Course-Code-Table.html" class="px-4 py-2 hover:bg-slate-600 transition rounded">Course Code Table</a>
+            <a href="Course-Title-View.html" class="px-4 py-2 hover:bg-slate-600 transition rounded">Course Title View</a>
+            <a href="Semester-wise-Breakdown.html" class="px-4 py-2 hover:bg-slate-600 transition rounded">Semester-wise Breakdown</a>
+            <a href="Syllabus.html" class="px-4 py-2 hover:bg-slate-600 transition rounded">Syllabus / Synopsis (PDF)</a>
+            <a href="Resource-Links.html" class="px-4 py-2 hover:bg-slate-600 transition rounded">Resource Links</a>
+          </div>
+        </div>
+
+        <!-- Course File Dropdown with Nested Submenus -->
+        <div class="relative group">
+          <button class="px-4 py-2 rounded bg-slate-700 hover:bg-slate-600 transition font-medium">Course File</button>
+          <div class="absolute hidden group-hover:flex flex-col bg-slate-800 rounded shadow-lg min-w-[220px] z-50 p-2 space-y-1">
+
+            <!-- Data Structures Nested Dropdown -->
+            <div class="relative group">
+              <a href="Data-Structures.html" class="px-4 py-2 w-full text-left hover:bg-slate-600 transition rounded">Data Structures</a>
+              <div class="absolute left-full top-0 ml-1 hidden group-hover:flex flex-col bg-slate-800 rounded shadow-lg min-w-[240px] p-2 space-y-1">
+
+                <!-- Course Details -->
+                <div class="relative group">
+                  <button class="px-4 py-2 w-full text-left hover:bg-slate-600 transition rounded">Course Details</button>
+                  <div class="absolute left-full top-0 ml-1 hidden group-hover:flex flex-col bg-slate-800 rounded shadow-lg min-w-[240px] p-2 text-sm">
+                    <p class="px-2 py-1 text-white">Title: <span class="font-medium">Data Structures</span></p>
+                    <p class="px-2 py-1 text-white">Code: <span class="font-medium">CS202</span></p>
+                    <p class="px-2 py-1 text-white">Semester: <span class="font-medium">III B.E.</span></p>
+                    <p class="px-2 py-1 text-white">Credits: <span class="font-medium">4</span></p>
+                  </div>
+                </div>
+
+                <!-- Course Overview -->
+                <!-- <div class="relative group">
+                  <button class="px-4 py-2 w-full text-left hover:bg-slate-600 transition rounded">Course Overview</button>
+                  <div class="absolute left-full top-0 ml-1 hidden group-hover:flex flex-col bg-slate-800 rounded shadow-lg min-w-[260px] p-2 space-y-1">
+                    <a href="#" class="px-2 py-1 hover:bg-slate-600 rounded">Objectives & Outcomes</a>
+                    <a href="#" class="px-2 py-1 hover:bg-slate-600 rounded">Syllabus Copy (PDF)</a>
+                    <a href="#" class="px-2 py-1 hover:bg-slate-600 rounded">Scheme of Instructions (PDF)</a>
+                  </div>
+                </div> -->
+
+                <!-- Lesson Plan -->
+                <div class="relative group">
+                  <button class="px-4 py-2 w-full text-left hover:bg-slate-600 transition rounded">Lesson Plan</button>
+                  <div class="absolute left-full top-0 ml-1 hidden group-hover:flex flex-col bg-slate-800 rounded shadow-lg min-w-[240px] p-2">
+                    <a href="#" class="px-2 py-1 hover:bg-slate-600 rounded">View Plan (PDF)</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Other Courses -->
+            <a href="Software-Engineering.html" class="px-4 py-2 hover:bg-slate-600 transition rounded">Software Engineering</a>
+            <a href="Artificial-Intelligence.html" class="px-4 py-2 hover:bg-slate-600 transition rounded">Artificial Intelligence</a>
+            <a href="Machine-Learning.html" class="px-4 py-2 hover:bg-slate-600 transition rounded">Machine Learning</a>
+          </div>
+        </div>
+
+        <!-- Remaining nav items -->
+        <div class="relative group">
+          <button class="px-4 py-2 rounded bg-slate-700 hover:bg-slate-600 transition font-medium">Research</button>
+          <div class="absolute hidden group-hover:flex flex-col bg-slate-800 rounded shadow-lg min-w-[160px] z-50">
+            <a href="Ongoing-Completed-Research.html" class="px-4 py-2 hover:bg-slate-600 transition">Ongoing & Completed Research </a>
+            <a href="Funded-Projects.html" class="px-4 py-2 hover:bg-slate-600 transition">Funded Projects </a>
+          </div>
+        </div>
+
+        <div class="relative group">
+          <button class="px-4 py-2 rounded bg-slate-700 hover:bg-slate-600 transition font-medium">Publications</button>
+          <div class="absolute hidden group-hover:flex flex-col bg-slate-800 rounded shadow-lg min-w-[160px] z-50">
+            <a href="Journals.html" class="px-4 py-2 hover:bg-slate-600 transition">Journals PDF link </a>
+            <a href="Conferences.html" class="px-4 py-2 hover:bg-slate-600 transition">Conferences PDF link</a>
+            <a href="Book-Chapters.html" class="px-4 py-2 hover:bg-slate-600 transition">Book Chapters </a>
+          </div>
+        </div>
+
+        <div class="relative group">
+          <button class="px-4 py-2 rounded bg-slate-700 hover:bg-slate-600 transition font-medium">Student Corner</button>
+          <div class="absolute hidden group-hover:flex flex-col bg-slate-800 rounded shadow-lg min-w-[160px] z-50">
+            <a href="Student-projects.html" class="px-4 py-2 hover:bg-slate-600 transition">Student projects under guidance PDF link </a>
+            <a href="Awards.html" class="px-4 py-2 hover:bg-slate-600 transition">Awards PDF link </a>
+            <a href="Paper-Publications.html" class="px-4 py-2 hover:bg-slate-600 transition">Paper Publications by students PDF link/ hyperlink  </a>
+          </div>
+        </div>
+
+        <div class="relative group">
+          <button class="px-4 py-2 rounded bg-slate-700 hover:bg-slate-600 transition font-medium">Events</button>
+          <div class="absolute hidden group-hover:flex flex-col bg-slate-800 rounded shadow-lg min-w-[160px] z-50">
+            <a href="Workshops-PDF.html" class="px-4 py-2 hover:bg-slate-600 transition">Workshops PDF link </a>
+            <a href="Attended-or-Organized-PDF.html" class="px-4 py-2 hover:bg-slate-600 transition">Attended or Organized PDF link </a>
+          </div>
+        </div>
+
+        <div class="relative group">
+          <a href="Gallery.html" class="px-4 py-2 rounded bg-slate-700 hover:bg-slate-600 transition font-medium">Gallery</a>
+          <div class="absolute hidden group-hover:flex flex-col bg-slate-800 rounded shadow-lg min-w-[160px] z-50">
+            <!-- Gallery Links -->
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Right Section: Professor Name -->
+    <div class="hidden sm:flex flex-col items-end text-right">
+      <span class="text-xl font-bold tracking-wide">Dr. Mohd Atif</span>
+      <span class="text-sm font-medium">Professor | CSE</span>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <div class="sm:hidden flex items-center ml-auto mt-2 sm:mt-0">
+      <button onclick="toggleSidebar()" class="text-white focus:outline-none">
+        <svg class="w-8 h-8 fill-white" viewBox="0 0 24 24">
+          <path d="M4 6h16M4 12h16M4 18h16" stroke="white" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Sidebar -->
+<div id="sidebar" class="fixed top-0 left-0 h-full w-2/3 bg-slate-900 text-white p-6 hidden z-50 transition-transform duration-300 ease-in-out overflow-y-auto">
+  <button onclick="toggleSidebar()" class="mb-4 text-white text-right w-full text-xl">✕ Close</button>
+  
+  <!-- Professor Info -->
+  <div class="flex items-center gap-4 mb-6">
+    <img src="https://via.placeholder.com/60" alt="Dr. Atif" class="w-14 h-14 rounded-full border border-white shadow" />
+    <div>
+      <p class="font-semibold text-sm">Dr. Mohd Atif</p>
+      <p class="text-xs text-slate-300">Professor, CSE Department</p>
+    </div>
+  </div>
+
+  <!-- Navigation Links -->
+  <nav class="flex flex-col gap-4">
+    <a href="#" class="hover:bg-slate-700 px-4 py-2 rounded">Home</a>
+    <a href="#" class="hover:bg-slate-700 px-4 py-2 rounded">About</a>
+    <a href="#" class="hover:bg-slate-700 px-4 py-2 rounded">Courses</a>
+    <a href="#" class="hover:bg-slate-700 px-4 py-2 rounded">Course File</a>
+    <a href="#" class="hover:bg-slate-700 px-4 py-2 rounded">Research</a>
+    <a href="#" class="hover:bg-slate-700 px-4 py-2 rounded">Publications</a>
+    <a href="#" class="hover:bg-slate-700 px-4 py-2 rounded">Student Corner</a>
+    <a href="#" class="hover:bg-slate-700 px-4 py-2 rounded">Events</a>
+    <a href="#" class="hover:bg-slate-700 px-4 py-2 rounded">Gallery</a>
+  </nav>
+</div>
+<div class="main-content flex items-center justify-center min-h-screen bg-gray-100">
+  <img src="ChatGPT Image Jul 13, 2025, 06_36_02 PM.png" 
+       alt="Centered Image"
+       class="rounded-xl shadow-lg border-4 m-7 border-slate-300 w-[1000px] h-auto" />
+</div>
+
+<footer class="bg-gradient-to-r from-slate-800 to-blue-900 text-white px-6 py-10 mt-20">
+  <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+    
+    <!-- Contact Form -->
+    <div>
+      <h2 class="text-xl font-semibold mb-4">📩 Contact Us</h2>
+      <form id="contactForm" class="space-y-3">
+        <input type="text" placeholder="Name" class="w-full px-3 py-2 rounded bg-slate-700 text-white placeholder-gray-300 focus:outline-none">
+        <input type="email" placeholder="Email" class="w-full px-3 py-2 rounded bg-slate-700 text-white placeholder-gray-300 focus:outline-none">
+        <input type="tel" placeholder="Phone" class="w-full px-3 py-2 rounded bg-slate-700 text-white placeholder-gray-300 focus:outline-none">
+        <input type="text" placeholder="Subject" class="w-full px-3 py-2 rounded bg-slate-700 text-white placeholder-gray-300 focus:outline-none">
+        <textarea placeholder="Message" rows="3" class="w-full px-3 py-2 rounded bg-slate-700 text-white placeholder-gray-300 focus:outline-none"></textarea>
+
+        <button type="submit" class="bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded shadow mt-2">
+          Submit
+        </button>
+        <p id="responseMessage" class="text-green-400 text-sm mt-2 hidden">
+          ✅ Thank you for reaching out! We’ll get back to you soon.
+        </p>
+      </form>
+    </div>
+
+    <!-- Additional Info & Social -->
+    <div>
+      <h2 class="text-xl font-semibold mb-4">🕒 Info & Links</h2>
+      <p><strong>Working Hours:</strong> Mon – Fri, 9:00 AM – 5:00 PM</p>
+      <p class="mt-2">
+        <a href="https://forms.gle/your-google-form" target="_blank" class="text-blue-300 underline hover:text-blue-100">Google Form</a>
+      </p>
+      
+      <div class="mt-4">
+        <h3 class="font-semibold mb-2">🔗 Connect with Me:</h3>
+        <!-- From Uiverse.io by Gaurang7717 --> 
+<button class="Btn">
+  <div class="sign">
+    <svg
+      fill="white"
+      class="svgIcon"
+      xmlns="http://www.w3.org/2000/svg"
+      height="1.6em"
+      viewBox="0 0 448 512"
+    >
+      <path
+        d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+      ></path>
+    </svg>
+  </div>
+
+  <div class="text">Linkedln</div>
+</button>
+
+      </div>
+    </div>
+
+    <!-- Footer Info -->
+    <div>
+      <h2 class="text-xl font-semibold mb-4">📅 Extras</h2>
+      <div class="space-y-2">
+        <p><strong>📆 Calendar:</strong> [Embed or link]</p>
+        <p><strong>👥 Visitor Counter:</strong> [Add a service/script]</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="my-6 border-slate-600">
+
+  <!-- Footer Bottom -->
+  <div class="text-center text-sm">
+    <p>© Dr. Mohd Atif | Deccan College of Engineering & Technology | 
+      <a href="https://yourblog.blogspot.com" class="underline text-blue-300 hover:text-blue-100" target="_blank">Visit Blog</a>
+    </p>
+  </div>
+</footer>
+
+<script src="app.js" ></script>
+<script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+</body>
+</html>
